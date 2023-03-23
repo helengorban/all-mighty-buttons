@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mighty buttons</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9ce36231fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="/tick-favicon.png" type="image/png" />
+  </head>
+  <body>
+    <header class="header header-text"><h1>ALL MIGHTY BUTTONS</h1></header>
+    <form class="blokk-1">
+      <h1 class="field-header">
+        🗓 Click the button to get current date <br />
+        🔥 Click the button to get how many days are until Jaanipäev <br />
+        🌙 Insert a number to get the difference between that number and 100
+        <br />
+        🦛 Insert a number to check whether it is a multiple of 5 or a multiple
+        of 7
+      </h1>
+      <div class="input-areas container-fluid">
+        <div class="row">
+          <div class="row row-col-sm-12 row-col-md-6 row-col-lg-2">
+            <div
+              class="num-1-input row row-col-sm-12 row-col-md-6 row-col-lg-2"
+            >
+              <input
+                type="number"
+                id="num-1"
+                name="num-1"
+                value="First Number"
+              /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="all-calc-buttons container-fluid">
+        <div class="row">
+          <div class="plus-btn col-sm-12 col-md-6 col-lg-3">
+            <button type="button" id="today-btn" class="btn-outline-success">
+              <i class="fa-solid fa-calendar fa-2xl"></i>
+            </button>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <button type="button" class="btn-outline-success jaanipaev-btn">
+              <i class="fa-solid fa-fire fa-2xl"></i>
+            </button>
+          </div>
+          <div class="diff-calc-btn col-sm-12 col-md-6 col-lg-3">
+            <button type="button" class="btn-outline-success">
+              <i class="fa-regular fa-moon fa-2xl"></i>
+            </button>
+          </div>
+
+          <div class="hippo-btn col-sm-12 col-md-6 col-lg-3">
+            <button type="button" class="btn-outline-success">
+              <i class="fa-solid fa-hippo fa-2xl"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container overflow-hiddn text-center">
+          <div class="row">
+            <div class="return-result plus-btn col-sm-12 col-md-6 col-lg-3">
+              <h4></h4>
+              <div class="col-12">
+                <h2 id="displayresult"></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div><hr class="rounded" /></div>
+
+    <form class="blokk-2">
+      <h1 class="field-header">
+        Input two numbers and find out which number is nearer to 99. <br />
+        Oh.. and what happens if you insert the same numbers? 🤔
+      </h1>
+      <div class="input-areas container-fluid">
+        <div class="row">
+          <div class="row row-col-sm-12 row-col-md-6 row-col-lg-2">
+            <div
+              class="num-2-input row row-col-sm-12 row-col-md-6 row-col-lg-2"
+            >
+              <input
+                type="number"
+                id="num-2"
+                name="num-2"
+                value="First Number"
+              /><br />
+            </div>
+            <div
+              class="num-3-input row row-col-sm-12 row-col-md-6 row-col-lg-2"
+            >
+              <input
+                type="number"
+                id="num-3"
+                name="num-3"
+                value="Second Number"
+              /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="all-calc-buttons container-fluid">
+        <div class="row">
+          <div class="plus-btn col-sm-12 col-md-6 col-lg-3">
+            <button type="button" id="fish-btn" class="btn-outline-success">
+              <i class="fa-solid fa-fish fa-2xl"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container overflow-hiddn text-center teine-vastus">
+          <div class="row">
+            <div class="return-result plus-btn col-sm-12 col-md-6 col-lg-3">
+              <h4></h4>
+              <div class="col-12">
+                <h2 id="displayresult2"></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div><hr class="rounded" /></div>
+
+    <form class="blokk-3">
+      <h1 class="field-header">
+        Insert a word to convert the first 3 characters in lower case and the
+        rest in upper case. <br />
+        If the word has less than 3 characters, all the characters are converted
+        into upper case.
+      </h1>
+      <div class="input-areas container-fluid">
+        <div class="row">
+          <div class="row row-col-sm-12 row-col-md-6 row-col-lg-2">
+            <div class="field-4 row row-col-sm-12 row-col-md-6 row-col-lg-2">
+              <input type="text" id="field-4" name="field-4" value=" " /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="all-calc-buttons container-fluid">
+        <div class="row">
+          <div class="plus-btn col-sm-12 col-md-6 col-lg-3">
+            <button type="button" id="mug-btn" class="btn-outline-success">
+              <i class="fa-solid fa-mug-saucer fa-2xl"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container overflow-hiddn text-center">
+          <div class="row">
+            <div class="return-result plus-btn col-sm-12 col-md-6 col-lg-3">
+              <h4></h4>
+              <div class="col-12">
+                <h2 id="displayresult3"></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="script.js"></script>
+</html>
